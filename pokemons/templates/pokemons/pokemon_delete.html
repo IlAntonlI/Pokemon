@@ -1,0 +1,34 @@
+{% extends "pokemons/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="card-delete">
+                    {% if pokemon.photo %}
+                        <img src="{{ pokemon.photo.url }}" width="150" height="150" alt="Pokemon photo">
+                    {% else %}
+                        <img src="#" alt="Pokemon photo">
+                    {% endif %}
+                    <h4><b>{{ pokemon.name }}</b></h4>
+                    <p><b>Вес:{{ pokemon.weight }}</b>кг</p>
+                    <p><b>Пол:</b>{{ pokemon.gender }}</p>
+                    <p><b>Таланты:</b>{{ pokemon.talents }}</p>
+                    <p><b>Тип:</b>{{ pokemon.type }}</p>
+                    <h4 class="">Удалить покемона?</h4>
+                    <div class="btn-yes-no">
+                        <form action="." method="POST">
+                            {% csrf_token %}
+                            <input class="btn-yes-del" type='submit' value="Да" />
+                        </form>
+                        <form action="{% url 'pokemons:pokemons'%}" method="GET">
+                            <input class="btn-no-del" type='submit' value="Нет" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

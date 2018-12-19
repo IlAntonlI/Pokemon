@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/header.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/content.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/footer.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/login.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/register.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/pokemon_create.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/pokemon_detail.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pokemons/css/pokemon_delete.css' %}" />
+    <title>Pokemons</title>
+</head>
+<body>
+{% block header %}
+    {% include "pokemons/includes/header.html" %}
+{% endblock %}
+<main>
+    {% block content %}
+        {% include "pokemons/includes/content.html" %}
+    {% endblock %}
+</main>
+{% block footer %}
+    {% include "pokemons/includes/footer.html" %}
+{% endblock %}
+</body>
+</html>

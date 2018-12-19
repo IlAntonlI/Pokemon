@@ -1,0 +1,153 @@
+h1 {
+    font-family: Constantia;
+    color: #993300;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(#fbd057, #f4a64b 48%, #eaac00 52%, #f0a52d);
+}
+
+.container {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-list {
+    background: #ddffdd;
+    width: 250px;
+    height: 250px;
+    border: 7px solid #003366;
+    border-radius: 5px;
+    margin: 10px 30px 5px 30px;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 10px 10px 20px;
+}
+
+p {
+    line-height: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}
+.btn-wrap{
+    display: flex;
+    margin-top: 70px;
+}
+a.btn-detail {
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    line-height: 1.9em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #1b64f6;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #001f88;
+    background: linear-gradient(#a4d9fb, #1892f4 48%, #004bea 52%, #0d4cf0);
+}
+a.btn-detail:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.btn-delete {
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+    line-height: 1.9em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #f65d5c;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #881400;
+    background: linear-gradient(#fba192, #f4503d 48%, #ea2703 52%, #f02a0f);
+}
+a.btn-delete:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.btn-create {
+    margin-left: 10px;
+    margin-top: 1px;
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 30px;
+    line-height: 1.9em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #eef6ff;
+    outline: none;
+    border: 2px solid #f67b0f;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #88500e;
+    background: linear-gradient(#fbd3a5, #f4a979 48%, #ea8840 52%, #f06c06);
+}
+a.btn-create:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+input.checkbox-del {
+    width: 5em;
+    height: 1.5em;
+    border: 5px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    margin: 0 0 0 200px;
+}
+
+.btn-checkbox {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 20px 0;
+}
+
+.btn-checkbox-del {
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 30px;
+    line-height: 1.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #f65d5c;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #881400;
+    background: linear-gradient(#fba192, #f4503d 48%, #ea2703 52%, #f02a0f);
+}
+.btn-checkbox-del:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}

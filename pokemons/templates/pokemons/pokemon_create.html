@@ -1,0 +1,13 @@
+{% extends "pokemons/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <form class="form-create" action="{{ object.get_absolute_url }}" method='POST' enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="btn-add" type='submit' value='Добавить' />
+        </form>
+    {% endif %}
+{% endblock %}

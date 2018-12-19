@@ -1,0 +1,18 @@
+{% extends "pokemons/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <form class="form-register" method="POST" action="{% url 'pokemons:register'%}">
+        {% for field in form %}
+            {% if form.errors %}
+                {{ form.errors }}
+            {% endif %}
+            {% csrf_token %}
+            <b>{{field.label_tag}}</b>
+            <div>{{field}}</div>
+            <div class="error">{{field.errors}}</div>
+        {% endfor %}
+        <input type="submit" class="btn-register" value="Зарегистрироваться">
+    </form>
+{% endblock %}

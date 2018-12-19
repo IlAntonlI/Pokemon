@@ -1,0 +1,13 @@
+input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight: 300;
+    color: darkblue;
+    padding: 0 20px 0 20px;
+    margin: 0 0 20px 0;
+}

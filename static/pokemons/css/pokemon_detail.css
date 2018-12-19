@@ -1,0 +1,36 @@
+.main {
+    background: lightblue;
+    overflow: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 100vh;
+   }
+
+h1 {
+    font-family: Constantia;
+    color: #993300;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(#fbd057, #f4a64b 48%, #eaac00 52%, #f0a52d);
+}
+
+
+.card {
+    background: #ddffdd;
+    width: 250px;
+    height: 380px;
+    border: 7px solid #003366;
+    border-radius: 5px;
+    display: block;
+    margin: 200px 20px 5px 400px;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 10px;
+   }
+
+p {
+    line-height: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}

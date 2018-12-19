@@ -1,0 +1,14 @@
+body {
+    background: #C0C0C0;
+}
+
+main {
+    background: lightblue;
+    overflow: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

@@ -1,0 +1,37 @@
+ <h1>Покемоны</h1>
+{% if user.is_authenticated %}
+    <a href="{% url 'pokemons:pokemon-create' %}" class="btn-create">Добавить покемона</a>
+{% endif %}
+{% block content %}
+    <form action="{% url 'pokemons:delete' %}" method="post">
+        {% csrf_token %}
+        <div class="container">
+            {% if object_list %}
+                {% for pokemon in object_list %}
+                    <div class="card-list">
+                        <h3><b>{{ pokemon.name }}</b></h3>
+                        <p><b>Вес:</b>{{ pokemon.weight }}кг</p>
+                        <p><b>Пол:</b>{{ pokemon.gender }}</p>
+                        <p><b>Тип:</b>{{ pokemon.type }}</p>
+                        {% if user.is_authenticated %}
+                            <div class="btn-wrap">
+                                <a href="{% url 'pokemons:pokemon-detail' pokemon.id %}"
+                                   class="btn-detail">Детально</a>
+                                <a href="{% url 'pokemons:pokemon-delete' pokemon.id %}"
+                                   class="btn-delete">Удалить</a>
+                            </div>
+                            <input class="checkbox-del" type="checkbox" name="del"  value="{{ pokemon.pk }}" >
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="btn-checkbox">
+            {% if user.is_authenticated %}
+                <input class="btn-checkbox-del" type="submit" value="Удалить выбранных покемонов">
+            {% endif %}
+        </div>
+    </form>
+{% endblock %}
+
+

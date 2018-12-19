@@ -1,0 +1,9 @@
+<header class="header">
+    <a href="{% url 'pokemons:pokemons' %}" class="btn-pokemons" >Покемоны</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'pokemons:logout' %}" class="btn-inter" >{{ request.user.username }}Выход</a>
+    {% else %}
+        <a href="{% url 'pokemons:register' %}" class="btn-reg" >Регистрация</a>
+        <a href="{% url 'pokemons:login' %}" class="btn-inter" >Вход</a>
+    {% endif %}
+</header>

@@ -1,0 +1,59 @@
+.main {
+    background: lightblue;
+    overflow: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 100vh;
+   }
+
+h1 {
+    font-family: Constantia;
+    color: #993300;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(#fbd057, #f4a64b 48%, #eaac00 52%, #f0a52d);
+}
+
+
+.card {
+    background: #ddffdd;
+    width: 250px;
+    height: 380px;
+    border: 7px solid #003366;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 20px 5px 30px;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 10px;
+   }
+
+p {
+    line-height: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+a.btn-detail {
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #1b64f6;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #001f88;
+    background: linear-gradient(#a4d9fb, #1892f4 48%, #004bea 52%, #0d4cf0);
+}
+a.btn-detail:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}

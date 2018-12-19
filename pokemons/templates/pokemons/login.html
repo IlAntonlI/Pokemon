@@ -1,0 +1,18 @@
+{% extends "pokemons/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <form class="form-login" action="{% url 'pokemons:login'%}" method="POST">
+        {% for field in form %}
+            {% if form.errors %}
+                {{ form.errors }}
+            {% endif %}
+            {% csrf_token %}
+            <b>{{field.label_tag}}</b>
+            <div>{{field}}</div>
+            <div class="error">{{field.errors}}</div>
+        {% endfor %}
+        <input type="submit" class="btn-login" value="Войти"/>
+    </form>
+{% endblock %}

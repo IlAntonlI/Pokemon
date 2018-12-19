@@ -1,0 +1,43 @@
+body {
+    background: #C0C0C0;
+    margin: 0;
+}
+
+.main {
+    background: lightblue;
+    overflow: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 100vh;
+}
+
+.form {
+    margin: 150px auto auto auto;
+    width: 220px;
+    padding: 10px 30px 6px 30px;
+    border: 5px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+    display: block;
+}
+
+label {
+    color: antiquewhite;
+
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight: 300;
+    color: darkblue;
+    padding: 0 20px 0 20px;
+    margin: 0 0 20px 0;
+}

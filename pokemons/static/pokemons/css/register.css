@@ -1,0 +1,55 @@
+body {
+    background: #C0C0C0;
+    margin: 0;
+}
+
+.form-register {
+    margin: 150px auto auto auto;
+    width: 250px;
+    padding: 10px 30px 6px 30px;
+    border: 5px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+    display: block;
+}
+
+label {
+    color: antiquewhite;
+    margin-left: 20px;
+}
+
+input {
+    width: 13em;
+    height: 1.5em;
+    border-radius: 5px;
+    border: 5px solid rgba(0,0,0,.2);
+    margin: 0 0 15px 35px;
+}
+
+.btn-register {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 35px;
+    position: relative;
+    display: inline-block;
+    width: 177px;
+    height: 2.5em;
+    line-height: 1.9em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #F64C2B;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+.btn-register:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0, 0, 0, .05) inset;
+}
